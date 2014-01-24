@@ -2735,11 +2735,11 @@ span.footer-banner {
 .link-krizovatka { background: url(images/junak_logo_sed.gif) no-repeat; }
 .link-krizovatka:hover { background: url(images/junak_logo_bar.gif) no-repeat; }
 .link-vodni {
-	background: url(images/vodni_skauti_znak_greyscale.gif) no-repeat;
+	background: url(images/vodni_skauti_znak_greyscale.png) no-repeat;
 	width: 36px;
 }
-.link-vodni:hover {	background: url(images/vodni_skauti_znak_bar.gif) no-repeat; }
-.link-poutnici { background: url(images/poutnici_logo.gif) no-repeat; }
+.link-vodni:hover {	background: url(images/vodni_skauti_znak_bar.png) no-repeat; }
+.link-poutnici { background: url(images/poutnici_logo.png) no-repeat; }
 
 .link-rss {background: url(images/social-rss-poutnici.png) no-repeat;}
 .link-facebook {background: url(images/social-fb-poutnici.png) no-repeat;}

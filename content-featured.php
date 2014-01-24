@@ -20,7 +20,8 @@ global $feature_class;
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+		<?php //wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+		<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">

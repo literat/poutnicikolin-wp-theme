@@ -52,7 +52,7 @@ if ( 'content' != $current_layout ) :
 			</div>
 			<div class="menu-item logo">
 				<a href="http://www.hopsuk.cz/" title="Horolezecký oddíl Potkali se u Kolína" target="_blank">
-					<img class="fellow" alt="HOPSUK Logo" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/poutnicikolin/images/hopsuk.gif">
+					<img class="fellow" alt="HOPSUK Logo" src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/poutnicikolin/images/hopsuk.png">
 				</a>
 			</div>
             <div class="menu-item logo">

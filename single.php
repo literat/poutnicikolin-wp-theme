@@ -22,7 +22,8 @@ get_header(); ?>
 					
 					<nav id="nav-single">
 						<h3 class="assistive-text"><?php _e( 'Post navigation', 'poutnicikolin' ); ?></h3>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav"><<</span> Předchozí', 'poutnicikolin' ) ); ?></span> | <span class="nav-next"><?php next_post_link( '%link', __( 'Další <span class="meta-nav">>></span>', 'poutnicikolin' ) ); ?></span>
+						<!--<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav"><<</span> Předchozí', 'poutnicikolin' ) ); ?></span> | <span class="nav-next"><?php next_post_link( '%link', __( 'Další <span class="meta-nav">>></span>', 'poutnicikolin' ) ); ?></span>-->
+						<?php wp_pagenavi(); ?>
 					</nav><!-- #nav-single -->
 
 				<?php endwhile; // end of the loop. ?>

@@ -33,7 +33,8 @@
 		<?php else : ?>
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'poutnicikolin' ) ); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'poutnicikolin' ) . '</span>', 'after' => '</div>' ) ); ?>
+			<?php //wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'poutnicikolin' ) . '</span>', 'after' => '</div>' ) ); ?>
+			<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 		</div><!-- .entry-content -->
 		<?php endif; ?>
 
