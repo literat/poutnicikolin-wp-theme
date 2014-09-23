@@ -1333,18 +1333,21 @@ h1.showcase-heading {
 
 /* Intro */
 article.intro {
-	background: #f9f9f9;
+	/*background: #f9f9f9;*/
 	border-bottom: none;
-	margin: -1.855em -8.9% 1.625em;
+	margin: 0 -8.9% 1em;
 	padding: 0 8.9%;
 }
+/*
 article.intro .entry-title {
 	display: none;
 }
+*/
 article.intro .entry-content {
 	color: #111;
 	font-size: 16px;
-	padding: 1.625em 0 0.625em;
+	padding: 1.625em 10px 0.625em;
+	border-bottom: 1px solid #CCC;
 }
 article.intro .edit-link a {
 	background: #aaa;
@@ -2893,7 +2896,8 @@ h2 span {
 /* zluta */
 #post-19 .entry-content,
 #post-104 .entry-content,
-#post-106 .entry-content
+#post-106 .entry-content,
+#post-2644 .entry-content
 {
 	background-color: #FFF9E6;
 	color: #000000;
@@ -3050,3 +3054,6 @@ div.menu-item.text {border-bottom:1px dotted black; text-align:right; padding-ri
 
 #access div.menunavigation-logout {float:right;margin-right:10px;}
 h3.widget-title {display: none;}
+
+/* booking calendar */
+div.bk_calendar_frame {margin-left:14px; margin-right:15px;}
