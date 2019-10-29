@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -e
+
+source "$(dirname "${BASH_SOURCE}")/include/common"
+
+function usage {
+    echo "Usage: ${0} [-bfhs]"
+    echo ""
+    echo "Options:"
+    echo "  -b      rebuild the docker images"
+    echo "  -d      run the containers in the background (detach)"
+    echo "  -h      show help"
+}
+
+# parse arguments
+docker_force_rebuild=0
+docker_compose_up_args=()
+
+while getopts ":bdh" option; do
+    case ${option} in
+        b)
+            docker_force_rebuild=1
+            ;;
+        d)
+            docker_compose_up_args+=(--detach)
+            ;;
+        h)
+            echo "Start the Docker containers"
+            echo ""
+            usage
+            exit
+            ;;
+        \?)
+            error_usage_exit "Invalid option -${OPTARG}"
+            ;;
+        :)
+            error_usage_exit "Option -${OPTARG} requires an argument"
+            ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+if [ $# -gt 0 ]; then
+    error_usage_exit "Too many arguments"
+fi
+
+# force or auto rebuild
+if [ "${docker_force_rebuild}" == "1" ]; then
+    docker_compose_up_args+=(--build)
+fi
+
+# start the dev container
+docker-compose --project-name poutnicikolin-wp-theme \
+    --file "${project_root}/docker-compose.yml" \
+    up "${docker_compose_up_args[@]}"
