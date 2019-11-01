@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+if [[ $# -gt 0 ]]; then
+    docker exec -it poutnicikolin-wp-theme_wordpress_1 bash -c "$*"
+else
+    docker exec -it poutnicikolin-wp-theme_wordpress_1 bash
+fi

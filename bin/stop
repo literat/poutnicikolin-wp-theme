@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+source "$(dirname "${BASH_SOURCE}")/include/common"
+
+docker-compose --project-name poutnicikolin-wp-theme \
+    --file "${project_root}/docker-compose.yml" \
+    stop
