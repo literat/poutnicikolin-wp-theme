@@ -27,7 +27,7 @@
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="expires" content="<?php echo date("D, d M Y H:i:s", strtotime("+1 week"))." GMT"; ?>">
 <meta http-equiv="cache-control" content="max-age=86400, must-revalidate" />
- 
+
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -100,7 +100,7 @@
 						<a class="link-krizovatka" href="http://krizovatka.skaut.cz/" title="Junák ČR"></a>
 						<a class="link-vodni" href="http://vodni.skauting.cz/" title="HKVS"></a>
 						<a class="link-poutnici" href="http://www.poutnicikolin.cz/" title="Poutníci Kolín"></a>
-						<span><?php bloginfo( 'description' ); ?></span> | 
+						<span><?php bloginfo( 'description' ); ?></span> |
 					</h2>
 				</div>
 			</hgroup>
@@ -149,20 +149,7 @@
 				<?php //get_search_form(); ?>
 			<?php endif; ?>
 
-			<div style="background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
-	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
-	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 0px;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
-    clear: both;
-    display: block;
-    float: left;
-    margin-bottom: 0px;
-    width: 100%; height: 4px;">&nbsp;
-			</div>
+			<div class="branding-line">&nbsp;</div>
 	</header><!-- #branding -->
 
 
